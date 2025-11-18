@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --transition: 300ms;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Smooth color transitions */
+html {
+  transition: background-color var(--transition) ease;
+}
+body {
+  transition: background-color var(--transition) ease,
+    color var(--transition) ease;
+}
